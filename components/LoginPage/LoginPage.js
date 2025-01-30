@@ -8,6 +8,7 @@ export default function LoginPage() {
     const [phoneNo, setPhoneNo] = useState('');
     const [password, setPassword] = useState('');
     const [userValidMessage, setUserValidMessage] = useState('');
+    const [invalidMessage, setInvalidMessage] = useState('');
 
     const loginSubmit=async()=>{
 
@@ -25,10 +26,12 @@ export default function LoginPage() {
             })
 
             if(reqs.ok){
-                console.log('API call response sucesss')
+                console.log('API call response sucesss');
+                setInvalidMessage('');
             }
             else{
-                console.log('API call response Failuree')
+                console.log('API call response Failuree');
+                setInvalidMessage('Invalid user credentials');
             }
         }
         catch(error){
@@ -71,6 +74,7 @@ export default function LoginPage() {
                       
                   </div>
               </div>
+              {(invalidMessage)&&<div className="signin_errorMessage">{invalidMessage}</div>}
               <div className='buttonCon' >
               <button className='login_button' type='submit' 
               onClick={()=>loginSubmit(phoneNo)}

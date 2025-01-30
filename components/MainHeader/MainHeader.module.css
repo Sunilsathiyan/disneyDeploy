@@ -1,4 +1,4 @@
-.header{
+.mainheaderCon{
     position: fixed;
     top: 0px;
     left: 0px;
@@ -7,18 +7,19 @@
     justify-content: start;
     align-items: start;
     padding: 30px 20px;
-    background-color:rgb(22, 22, 22) ;
+    /* background-color:rgba(22, 22, 22,0.9) ; */
+    background-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0.8), rgba(0,0,0,0) );
     height: 100%;
-    width:7%;
+    width:10%;
     z-index: 5;
     transition: all 0.5s ease-in-out;
-    overflow: hidden;
 }
 
-.header:hover{
+.mainheaderCon:hover{
     width:30%;
     background-color:transparent ;
     background-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0.8), rgba(0,0,0,0) );
+    z-index: 2000;
 }
 
 .nav ul{
@@ -51,7 +52,7 @@
 /* -webkit-background-clip: text;
 -webkit-text-fill-color: transparent; */
 
-.header:hover .nTitle{
+.mainheaderCon:hover .nTitle{
     left: 0px;
     opacity: 1;
     visibility:visible;

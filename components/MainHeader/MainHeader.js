@@ -9,13 +9,10 @@ import { PiTelevisionSimpleBold } from "react-icons/pi";
 import { MdOutlineMovie } from "react-icons/md";
 import { MdSportsVolleyball } from "react-icons/md";
 import { FaRegUserCircle } from "react-icons/fa";
-// import { GoHomeFill } from "react-icons/go";
-// import { IoSearchSharp } from "react-icons/io5";
-// import { FaUserCircle } from "react-icons/fa";
 
 export default function MainHeader(){
 
-    return <header className={classes.header}>
+    return <header className={classes.mainheaderCon}>
     <Link className={classes.logo} href="/"> 
         <Image src={logoImg} alt="Disney+" priority/>
     </Link>
