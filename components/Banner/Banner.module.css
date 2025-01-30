@@ -1,0 +1,43 @@
+.BannerMain{
+    width: 100%;
+    height: auto;
+    /* position: fixed;
+    top: 0px;
+    left:0px;     */
+}
+
+.BannerMain img{
+    height: auto ;
+    object-fit:cover;
+    inset: 0px;
+}
+
+.Overlay{
+    position: absolute;
+    top: 10vh;
+    left: 5vh;
+    padding: 50px 125px;
+    z-index: 1000 !important;
+    width: 40%;
+}
+
+.Overlay button{
+ background-color: hsla(0, 0%, 100%, .3);
+ padding: 10px 100px;
+ margin-top: 20px;
+}
+
+.Overlay button:hover{
+    background-color: hsla(0, 0%, 100%, .5);
+   }
+
+.sTitle{
+    color: #42cbfd;
+    font-weight: 700;
+}
+
+.sDescription{
+    color: white;
+    font-weight: 600;
+    opacity: 0.9;
+}

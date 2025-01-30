@@ -1,0 +1,16 @@
+.proContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.proContainer img{
+    width: 450px;
+    height: 180px;
+    margin-bottom: 30px;
+}
+
+.proContainer button{
+   padding: 10px 70px;
+}
